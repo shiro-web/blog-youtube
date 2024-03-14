@@ -1,0 +1,173 @@
+
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333333;
+    }
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+header h1{
+    max-width: 1200px;
+    padding: 20px 16px;
+    line-height: 1px;    
+    margin: 0 auto;
+}
+
+header h1 a{
+    display: inline-block;
+}
+
+.logo{
+    width: 145px;
+    height: 30px;
+}
+
+.header-nav{
+    padding: 14px 0;
+}
+
+.header-nav ul{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    color: #FFFFFF;
+    gap: 60px;
+    padding: 0 16px;
+    font-size: 14px;
+}
+
+.header-nav ul li a{
+    color: #FFFFFF;
+}
+
+.pick-up{
+    max-width: 1200px;
+    margin: 0 auto 77px;
+    display: flex;
+    gap: 23px;
+    padding: 170px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color:#333333 ;
+}
+
+.pick-up-img-wrapper{
+    margin-bottom: 13px;
+}
+
+.pick-up p{
+    margin-bottom: 30px;
+}
+
+.readmore{
+    text-align: center;
+    font-size: 14px;
+}
+
+main{
+    width: 65%;
+}
+
+.body-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    gap: 54px;
+}
+
+main article{
+    margin-bottom: 87px;
+}
+
+main article h2{
+    font-size: 24px;
+    margin-bottom: 27px;
+}
+
+main article ul{
+    display: flex;
+    gap: 32px;
+    margin-bottom: 13px;
+    font-size: 14px;
+}
+
+.main-img-wrapper{
+    margin-bottom: 13px;
+}
+
+main article p{
+    font-size: 16px;
+    margin-bottom: 33px;
+}
+
+aside{
+    width: 35%;
+    padding: 20px;
+}
+
+.profile{
+    margin-bottom: 57px;
+}
+
+.profile-img-wrapper{
+    max-width: 130px;
+    margin-bottom: 35px;
+}
+
+.profile-img-wrapper img{
+    border-radius:50% ;
+}
+
+.aside-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 37px;
+}
+
+.profile-text{
+    font-size: 14px;
+}
+
+.ranking-img-wrapper img{
+    max-width: 345px;
+}
+
+.ranking h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 34px;
+}
+
+.ranking article{
+    margin-bottom: 31px;
+}
+
+.ranking article p{
+    font-size: 14px;
+}
+
+.archive ul li{
+    padding: 23px;
+    border-top: 1px solid #333333;
+}
+
+.archive ul li:last-of-type{
+    border-bottom: 1px solid #333333;
+}
