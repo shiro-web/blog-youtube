@@ -16,6 +16,35 @@ img{
     width: 100%;
 }
 
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.readmore{
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    position: relative;
+}
+
+.readmore a::after{
+    content: "";
+    width:82px;
+    height: 1px;
+    background-color: #333333;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 41px);
+    transition: all 200ms ease;
+}
+
+.readmore a:hover::after{
+    transform: translateY(3px);
+    opacity: 0;
+}
+
 header{
     position: fixed;
     width: 100%;
@@ -40,6 +69,7 @@ header h1 a{
 
 .header-nav{
     padding: 14px 0;
+    background-color: #333333;
 }
 
 .header-nav ul{
@@ -58,10 +88,10 @@ header h1 a{
 
 .pick-up{
     max-width: 1200px;
-    margin: 0 auto 77px;
+    margin: 0 auto 70px;
     display: flex;
     gap: 23px;
-    padding: 170px 16px;
+    padding: 170px 16px 0;
     font-size: 16px;
     font-weight: bold;
     color:#333333 ;
@@ -75,21 +105,16 @@ header h1 a{
     margin-bottom: 30px;
 }
 
-.readmore{
-    text-align: center;
-    font-size: 14px;
-}
-
 main{
     width: 65%;
 }
 
 .body-wrapper{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 140px;
     padding: 0 16px;
     display: flex;
-    gap: 54px;
+    gap: 34px;
 }
 
 main article{
@@ -128,7 +153,7 @@ aside{
 
 .profile-img-wrapper{
     max-width: 130px;
-    margin-bottom: 35px;
+    margin:0 auto 35px;
 }
 
 .profile-img-wrapper img{
@@ -139,6 +164,7 @@ aside{
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 37px;
+    text-align: center;
 }
 
 .profile-text{
@@ -166,8 +192,60 @@ aside{
 .archive ul li{
     padding: 23px;
     border-top: 1px solid #333333;
+    font-size: 14px;
 }
 
 .archive ul li:last-of-type{
     border-bottom: 1px solid #333333;
+}
+
+footer{
+   background-color: #F7F7F7;
+   padding: 55px 0 12px;
+}
+
+.footer-inner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.footer-item{
+    width: 30%;
+}
+
+.footer-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.footer-about p{
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.footer-about ul li{
+    font-size: 14px;
+}
+
+.footer-menu ul li{
+    padding: 19px;
+    border-top: 1px solid #333333;
+    font-size: 14px;
+    position: relative;
+}
+
+.footer-menu ul li::before{
+    content: "";
+    position: absolute;
+}
+
+.footer-menu ul li:last-of-type{
+    border-bottom: 1px solid #333333;
+}
+
+.copyright{
+    font-size: 12px;
+    text-align: center;
 }
