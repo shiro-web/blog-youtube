@@ -49,6 +49,7 @@ header{
     position: fixed;
     width: 100%;
     background: #FFFFFF;
+    z-index: 10000;
 }
 
 header h1{
@@ -68,7 +69,7 @@ header h1 a{
 }
 
 .header-nav{
-    padding: 14px 0;
+    padding: 10px 0;
     background-color: #333333;
 }
 
@@ -110,9 +111,6 @@ main{
 }
 
 .body-wrapper{
-    max-width: 1200px;
-    margin: 0 auto 140px;
-    padding: 0 16px;
     display: flex;
     gap: 34px;
 }
@@ -171,10 +169,6 @@ aside{
     font-size: 14px;
 }
 
-.ranking-img-wrapper img{
-    max-width: 345px;
-}
-
 .ranking h2{
     font-size: 18px;
     font-weight: bold;
@@ -227,18 +221,24 @@ footer{
 
 .footer-about ul li{
     font-size: 14px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.footer-about ul li::before{
+    content: "";
+    position: absolute;
+    top: 50%;   /* 縦軸をセンタリングする */ 
+    left: 0;
+    transform: translateY(-50%);   /* 縦軸をセンタリングする */  
+    border: 5px solid transparent;
+    border-left: 8px solid #333333;   /* 好みで色を変えてください */  
 }
 
 .footer-menu ul li{
     padding: 19px;
     border-top: 1px solid #333333;
     font-size: 14px;
-    position: relative;
-}
-
-.footer-menu ul li::before{
-    content: "";
-    position: absolute;
 }
 
 .footer-menu ul li:last-of-type{
@@ -248,4 +248,56 @@ footer{
 .copyright{
     font-size: 12px;
     text-align: center;
+}
+
+@media screen and (max-width:770px){
+    header{
+        width: 100%;
+    }
+
+    .header-nav{
+        overflow-x: scroll;
+    }
+
+    .pick-up{
+        display: flex;
+        flex-direction: column;
+        padding: 140px 16px 0;
+    }
+
+    .pick-up p{
+        margin-bottom: 21px;
+    }
+    
+    main{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%;
+        padding: 0;
+    }
+
+    .body-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 120px;
+    }
+
+    .footer-inner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-item{
+        width: 100%;
+    }
+
+    .footer-about{
+        margin-bottom: 59px;
+    }
+
+    .footer-menu{
+        margin-bottom: 35px;
+    }
 }
