@@ -1,6 +1,6 @@
 
 *{
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family:'Noto Sans', 'Noto Sans JP';
     color: #333333;
     }
 
@@ -74,12 +74,8 @@ header h1 a{
 }
 
 .header-nav ul{
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
-    color: #FFFFFF;
     gap: 60px;
-    padding: 0 16px;
     font-size: 14px;
 }
 
@@ -88,11 +84,10 @@ header h1 a{
 }
 
 .pick-up{
-    max-width: 1200px;
     margin: 0 auto 70px;
+    padding: 170px 16px 0;
     display: flex;
     gap: 23px;
-    padding: 170px 16px 0;
     font-size: 16px;
     font-weight: bold;
     color:#333333 ;
